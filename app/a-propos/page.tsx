@@ -1,7 +1,16 @@
-export default function Accueil(){
-    return(
-    <main>
-        <h1>A propos</h1>
-    </main>
-)
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: "À propos | Atelier Brume",
+}
+
+export default function PageAPropos(){
+    return (
+        <div className="max-w-2xl">
+            <h1 className="text-4xl font-semibold tracking-tight">À propos</h1>
+            <p className="mt-4 text-lg text-foreground/60">
+                Étudiant en développement web, je crée des sites, des scènes 3D et des identités visuelles.
+            </p>
+        </div>
+    )
 }

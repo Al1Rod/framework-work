@@ -12,7 +12,7 @@ export default function Accordeon({ question, children }: Props) {
  
   return (
     <div className="border-b border-foreground/15 py-4">
-      <button onClick={() => setOuvert(!ouvert)} className="font-medium">
+      <button onClick={() => setOuvert(!ouvert)} className="w-full text-left font-medium">
         {question}
       </button>
       {ouvert && <p className="mt-2 text-foreground/60">{children}</p>}
