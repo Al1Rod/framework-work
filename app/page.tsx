@@ -12,9 +12,9 @@ type Question = {
 }
 
 const QUESTIONS: Question[] = [
-  { id: 1, question: "Ca va?", reponse: "oui très bien il se fait un tard mais ça va"},
-  { id: 2, question: "Comment accéder a vos service ?", reponse: "Nous contacter"},
-  { id: 3, question: "Aimes tu la moto ?", reponse: "Oui j'aimerais pouvoir passer le permis"}
+  { id: 1, question: "As-tu de l'expérience ?", reponse: "J'ai pu faire quelques stages qui m'ont appris à travailler au sein d'une entreprise"},
+  { id: 2, question: "Par quoi es-tu joignable ?", reponse: "LinKedin notamment Alain Rodhain et vous devriez trouver"},
+  { id: 3, question: "Aimes-tu la moto ?", reponse: "Oui j'aimerais pouvoir passer le permis"}
 ]
 
 export default function Accueil(){
@@ -22,17 +22,17 @@ export default function Accueil(){
     <>
       <Hero
         titre="Des sites web et de la bonne humeur"
-        texte="Jeune développeur en soif d'apprendre et de nouveautées"
+        texte="Jeune développeur en soif d'apprendre et de nouveautés"
       />
 
-      <Section titre="Nos projets">
+      <Section titre="Mes projets">
         <GrilleProjets projets={PROJETS.slice(0, 3)} />
         <div className="mt-6">
           <Bouton label="Voir tous les projets" href="/projets" variante="plein" />
         </div>
       </Section>
 
-      <Section titre="Des questions">
+      <Section titre="Des questions ?">
         {QUESTIONS.map((question) => (
           <Accordeon key={question.id} question={question.question}>
             {question.reponse}

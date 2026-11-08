@@ -3,7 +3,7 @@ import GrilleProjets from "@/components/grille-projets"
 import { PROJETS } from "@/data/projets"
 
 export const metadata: Metadata = {
-    title: "Projets | Atelier Brume",
+    title: "Projets | Alain Rodhain",
 }
 
 export default function PageProjets(){

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "À propos | Atelier Brume",
+    title: "À propos | Alain Roddhain",
 }
 
 export default function PageAPropos(){

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Atelier Brume",
+  title: "Alain Rodhain",
   description: "Portfolio : sites web, scènes 3D et projets scolaires.",
 };
 
