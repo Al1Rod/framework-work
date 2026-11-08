@@ -36,8 +36,7 @@ export default function Accueil(){
       texte="Atelier brume est un studio de production"
     />
 
-    <Bouton label="voir les projets" href="/projet" variante="contour"></Bouton>
-    <Section titre="Nos projet">
+    <Section titre="Nos projets">
       <div className="grid gap-4 sm:grid-cols-3">
         {PROJET.map((projet) =>
           <Carte 
@@ -48,7 +47,7 @@ export default function Accueil(){
           />
         )}
       </div>
-      <div className="mt-5"><Bouton label="voir plus" href="/projet" variante="plein"></Bouton></div>
+      <div className="mt-5"><Bouton label="voir plus" href="/projets" variante="plein"></Bouton></div>
       
     </Section>
     <Section titre="Des questions">

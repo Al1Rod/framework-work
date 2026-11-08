@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const LIENS = [
     { href: "/", label: "Accueil"},
-    { href: "/projet", label: "Projets"},
+    { href: "/projets", label: "Projets"},
     { href: "/contact", label: "Contact"},
 ]
 
