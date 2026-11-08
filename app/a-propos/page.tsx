@@ -9,7 +9,7 @@ export default function PageAPropos(){
         <div className="max-w-2xl">
             <h1 className="text-4xl font-semibold tracking-tight">À propos</h1>
             <p className="mt-4 text-lg text-foreground/60">
-                Étudiant en développement web, je crée des sites, des scènes 3D et des identités visuelles.
+                Étudiant en développement web, je crée des sites.
             </p>
         </div>
     )

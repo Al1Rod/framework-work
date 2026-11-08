@@ -21,8 +21,8 @@ export default function Accueil(){
   return (
     <>
       <Hero
-        titre="Des images, Des jeux, des sites"
-        texte="Atelier brume est un studio de production"
+        titre="Des sites web et de la bonne humeur"
+        texte="Jeune développeur en soif d'apprendre et de nouveautées"
       />
 
       <Section titre="Nos projets">
