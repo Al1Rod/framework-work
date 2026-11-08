@@ -6,13 +6,15 @@ type Props ={
     variante?: "plein" | "contour"
 }
 export default function Bouton({label, href, variante = "plein"}: Props){
-    const style = 
+    const style =
         variante === "plein"
-            ? "bg-black text-white" // variante plein
-            : "border border-black text-black" // variante contour
+            ? "bg-foreground text-background" // variante plein
+            : "border border-foreground text-foreground" // variante contour
     return(
-        <Link href="/HREF" className={`rounded px-5 py-2 ${style}`}>
+        <Link href={href} className={`inline-block rounded px-5 py-2 ${style} text-sm font-medium`}>
             {label}
         </Link>
     )
+
+        
 }

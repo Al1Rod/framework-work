@@ -33,11 +33,11 @@ export default function Accueil(){
 
     <Hero
       titre="Des images, Des jeux, des sites"
-      texte="Atemier brume est un studio de production"
+      texte="Atelier brume est un studio de production"
     />
 
     <Bouton label="voir les projets" href="/projet" variante="contour"></Bouton>
-    <Section titre="nos projet">
+    <Section titre="Nos projet">
       <div className="grid gap-4 sm:grid-cols-3">
         {PROJET.map((projet) =>
           <Carte 
@@ -51,10 +51,10 @@ export default function Accueil(){
       <div className="mt-5"><Bouton label="voir plus" href="/projet" variante="plein"></Bouton></div>
       
     </Section>
-    <section title="Des questions">
+    <Section titre="Des questions">
       <div>
           {QUESTIONS.map((question) =>
-            <Accordeon 
+            <Accordeon
               key={question.id}
               question={question.question}
               children={question.children}
@@ -62,7 +62,7 @@ export default function Accueil(){
             />
         )}
       </div>
-    </section>
+    </Section>
     
 
   </main>

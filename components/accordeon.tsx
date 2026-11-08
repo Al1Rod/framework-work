@@ -11,11 +11,11 @@ export default function Accordeon({ question, children }: Props) {
   const [ouvert, setOuvert] = useState(false)
  
   return (
-    <div className="border-b border-neutral-200 py-4">
+    <div className="border-b border-foreground/15 py-4">
       <button onClick={() => setOuvert(!ouvert)} className="font-medium">
         {question}
       </button>
-      {ouvert && <p className="mt-2 text-neutral-600">{children}</p>}
+      {ouvert && <p className="mt-2 text-foreground/60">{children}</p>}
     </div>
   )
 }
